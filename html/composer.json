@@ -1,0 +1,33 @@
+{
+    "name": "thenewrol/read-csv",
+    "description": "Sencilla aplicación para leer csv",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TheNewRol - Carlos Alfredo Valle Valle",
+            "email": "alfredo.valle93@gmail.co"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "ReadCSV\\": "src/"
+        },
+        "files": []
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ReadCSV\\Test\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.5"
+    },
+    "scripts": {
+        "dev" : "composer install",
+        "prod": "composer install --no-dev",
+        "test": "./vendor/bin/phpunit --verbose",
+        "test:dox": "./vendor/bin/phpunit --testdox",
+        "test:cover": "vendor/bin/phpunit --coverage-html cover"
+    }
+}
