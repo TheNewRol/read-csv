@@ -1,12 +1,12 @@
 {
     "name": "thenewrol/read-csv",
     "description": "Sencilla aplicación para leer csv",
-    "type": "project",
+    "type": "library",
     "license": "MIT",
     "authors": [
         {
             "name": "TheNewRol - Carlos Alfredo Valle Valle",
-            "email": "alfredo.valle93@gmail.co"
+            "email": "alfredo.valle93@gmail.com"
         }
     ],
     "autoload":{
