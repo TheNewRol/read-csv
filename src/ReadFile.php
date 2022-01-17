@@ -42,13 +42,7 @@ class ReadFile {
         return $data;
     }
     public function findValue($value) {
-        $data = array_filter($this->data, function($row) use ($value){
-            foreach($row as $columValue){
-                if($columValue == $value){
-                    return $row;
-                }
-            }
-        });
-        return $data;
+        $key = array_search($value, array_column($this->data, 0));
+        return $this->data[$key];
     }
 }
